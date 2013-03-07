@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Mon Mar 04 21:37:33 PST 2013
+markTmpDer=true
+builderNum=2
+outputDir=outputs
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=Philip_Tracton_Resume.tex
+outputFile=Philip_Tracton_Resume.pdf
+langSpell=en
+markDer=true
+srcDir=src
