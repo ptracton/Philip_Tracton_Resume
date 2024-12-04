@@ -1,6 +1,6 @@
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Resume for Philip Tracton
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[11pt,letter]{moderncv}
 
 % moderncv themes
@@ -9,10 +9,11 @@
 % personal data
 \firstname{Philip}
 \familyname{Tracton}
-\address{REMOVED FROM WEB}{Southern California}
+\address{REMOVED FROM WEB}
 \mobile{REMOVED FROM WEB}
-\email{ptracton@gmail.com}
+\email{REMOVED FROM WEB}
 \extrainfo{\url{https://github.com/ptracton}}
+%\photo{Phil_Tracton_Headshot.png}
 
 \usepackage[margin=0.65in]{geometry}
 
@@ -20,40 +21,39 @@
 \maketitle
 \section{Summary}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Experienced embedded systems engineer with a 20+ year track record of delivering high quality hardware and software designs.  I have developed novel tools for simulating hardware and software together before manufacturing that has saved several hundred thousand dollars in time and materials.  In addition to implementing designs I have taught many of students at UCLA Extension how to design both Xilinx FPGA hardware and embedded C programming on an ARM Cortex M4.  
+Experienced embedded systems engineer with a 25+ year track record of delivering high quality hardware and software designs.  I have developed novel tools for simulating hardware and software together before manufacturing that has saved several hundred thousand dollars in time and materials.  In addition to implementing designs I have taught many of students at UCLA Extension and California State University at Northridge how to design both Xilinx FPGA hardware and embedded C programming on an ARM Cortex M4.
 
-\section{Experience}
+\section{Engineering Experience}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\cventry{2013--Present}{Principal IC Design Engineer}{Medtronic
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cventry{2022--Present}{Principal IC Design Engineer}{Medtronic Operations}{Northridge, CA}{}{
+  \begin{itemize}
+  \item \textit {Implantable Artificial Intelligence} -- Prototyping and evaluating performance in several dimensions for implementing artificial intelligence in an implantable device.  This includes architecture and implementation of both the logic controller and compiler for feeding the logic the instructions to process the algorithm.
+  \end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cventry{2013--2021}{Principal IC Design Engineer}{Medtronic
   Neuromodulation}{Northridge, CA}{}{
   \begin{itemize}
-  \item \textit{Pump Motor IC} -- Digital IC developer on new electronics package for updating and enhancing the Synchromed II device.\\
-  \item \textit{Haptix} -- Firmware developer on DARPA funded project for prosthetic hand.  Implemented the low level signal processing algorithms, battery management and battery recharge code.  Lead unit testing effort of the low level code.  Managed a team of 3 contractors to accomplish this goal in time.\\
+  \item \textit {G3 Decision Tree} -- This was an independent "skunk
+    works" project that has won funding in several competitions.  This
+    new Hardware SubRoutine fetches a linked list of trees from
+    memory, pulls in the data from the sensors and performs the
+    operations in sequence. It is in the process of being implemented
+    in 55nm.  This will be the first Machine Learning algorithm
+    implemented in an implant device.  \\
+  \item \textit{Microcortex} -- Continued learning the Stim IC as the lead for Stim on this project.  Replaced the entire clock tree for significant power savings.  Parameterized the number of electrodes in the design.  Lead and implemented using Jade Regman for generating register information and documentation.  Implemented all of the custom generators in python.  \\
+  \item \textit{EECAPS} -- This project was used to learn the Stim IC for Neuromodulation Therapy.  Implemented blanking communications channel between Stim and Sense ICs.  \\
+  \item \textit{Pump Motor IC} -- Digital IC developer on new electronics package for updating and enhancing the Synchromed II device.  Implemented new telemetry reset mechanism.  \\
+  \item \textit{Haptix} -- Firmware developer on DARPA funded project for prosthetic hand.  Implemented the low level signal processing algorithms, battery management and battery recharge code.  Lead unit testing effort of the low level code.  Managed a team of 3 contractors to accomplish this goal in time. \\
   \item \textit{CoSimulation} -- Developed new techniques for simulating multiple ICs together.  This includes new simulation tools, RTL and firmware.  This lead to simulating die stacks and then whole hybrids.  This technique has saved significant time and money in reducing board debug, bring up time and respins.  This environment became the verification platform for several firmware, IC stacks and board projects.\\
   \item \textit{Hardware SubRoutines} -- Continued as a developer on the primary MCU platform shared by Neuromodulation and Cardiac divisions.  Debugged and repaired the hardware implemented mathematical operations.  \\
   \end{itemize}
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\cventry{2010--Present}{Instructor}{UCLA Extension}{Westwood, CA}{}{
-  \begin{itemize}
-  \item \textit{Learning Python} -- Taught an introduction to Python
-    course that leads the students from installing Python to building their own
-    weblog with a database backend. Taught class live and online.\\
-  \item \textit{Embedded Software 1} --   This class introduces
-    students to programming in C for an embedded ARM Cortex-M4
-    microprocessor.Students learn to write simple code to control hardware, 
-    handle interrupts and ultimately develop tasks running on FreeRTOS.  Taught
-    this class live and online.\\
-  \item \textit{Using FPGAs in Embedded Systems} -- The
-    class introduces the students to Verilog and developing modules and test benches.
-    Students ultimately program the Digilent Nexys-2, later upgraded to the Basys-3, board with designs to
-    control a variety of peripherals including UART, LED, and memories. Taught this class live and online.\\
-  \end{itemize}
-}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \cventry{2006--2013}{Sr. IC Design Engineer}{Medtronic
   Neuromodulation}{Northridge, CA}{}{
   \begin{itemize}
@@ -73,7 +73,7 @@ Experienced embedded systems engineer with a 20+ year track record of delivering
   \end{itemize}
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \cventry{2002--2006}{Embedded Software Engineer}{Medtronic
   Diabetes}{Northridge, CA}{}{
   \begin{itemize}
@@ -81,7 +81,7 @@ Experienced embedded systems engineer with a 20+ year track record of delivering
   \item \textit{2007 Implantable Pump Software} -- Maintained and enhanced existing product software.  Supported devices in the field and laboratory.\\
   \end{itemize}
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \cventry{2000--2002}{Embedded Software Engineer}{Zuma Networks}{West Hills, CA}{}{
   \begin{itemize}
   \item \textit{Fatal Error} -- Upon the crash of one of the embedded boards this program would collect information about the operating system, including a stack trace of the crashed task, capture the current state of the CPU and board, store the information to flash and reboot the system.\\
@@ -91,14 +91,45 @@ Experienced embedded systems engineer with a 20+ year track record of delivering
   \item \textit{Device Drivers} -- Developed, implemented and debugged device drivers to custom ASICs and FPGAs\\
   \end{itemize}
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \cventry{1998--2000}{Software Engineer}{Teradyne}{Agoura Hills, CA}{}{
   \begin{itemize}
   \item \textit{Scan Data Memory API} -- Responsibilities included design, documenting, planning, scheduling, implementing and leading the team of engineers to create a new APU to the Scan Data Memory embedded on the Scan Path Option Board.  Implemented the whole project in C/C++ on Solaris and finished ahead of schedule.\\
   \end{itemize}
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\newpage
+\section{Educator Experience}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cventry{2023--Present}{Instructor}{California State University at Northridge}{Northridge, CA}{}{
+  \begin{itemize}
+  \item \textit{ECE 420} -- Digital Systems Design with Programmable Logic is a senior undergraduate elective course.  This course introduces students to VHDL and Xilinx FPGAs.  
+  \item \textit{ECE 524L} -- FPGA/ASIC Design and Optimization Using VHDL is a graduate level lab course.  This lab course is a continuation of ECE 420 with advanced FPGA features in VHDL on a Xilinx device.
+  \end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cventry{2010--Present}{Instructor}{UCLA Extension}{Westwood, CA}{}{
+  \begin{itemize}
+  \item \textit{Learning Python} -- Taught an introduction to Python
+    course that leads the students from installing Python to building their own
+    weblog with a database backend. Taught class live and online.\\
+  \item \textit{Embedded Software 1} --   This class introduces
+    students to programming in C for an embedded ARM Cortex-M4
+    microprocessor. Students learn to write simple code to control hardware,
+    handle interrupts and ultimately develop tasks running on FreeRTOS.  Taught
+    this class live and online.\\
+  \item \textit{Using FPGAs in Embedded Systems} -- The
+    class introduces the students to Verilog and developing modules and test benches.
+    Students ultimately program the Digilent Nexys-2, later upgraded to the Basys-3, board with designs to
+    control a variety of peripherals including UART, LED, and memories. Taught this class live and online.\\
+  \item \textit{Python on the Raspberry Pi} -- This class uses Raspbian OS on a Raspberry Pi to develop applications in Python.  The course covers web serving, databases, bread boarding electronics and interfacing, serial interfaces to external devices, and communication via Twitter and SMS.  This course has only been online.\\
+  \end{itemize}
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Computer Skills}
 \cvline{Languages}{C, Python, Perl, Assembly (ColdFire, x86, PPC, Cortex-M3/M4),
   Verilog, VHDL}
@@ -106,7 +137,7 @@ Experienced embedded systems engineer with a 20+ year track record of delivering
   2000/XP/7/10), ATI Nucleus Plus, $\mu$COS-II, FreeRTOS}
 \cvline{Tools}{Xilinx ISE/Vivado, Modelsim, Simvision, NCVerilog, Altera Quartus, SVN, Git, \LaTeX}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Education}
 \cventry{2002--2005}{Master of Science in Electrical Engineering}{California State University Northridge}{Northridge, CA}{}{}
 \cvline{Project}{\small The Dynamic Burnin of the forward and inverse 2D
@@ -115,14 +146,14 @@ Experienced embedded systems engineer with a 20+ year track record of delivering
 \cventry{1993--1998}{Bachelor of Science in Electrical
   Engineering}{University of Maryland}{College Park, MD}{}{}  % arguments 3 to 6 can be left empty
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Publications}
 \cventry{MAPLD 2004}{A Re-Programmable Platform for Dynamic Burn-in Test of Xilinx VirtexII 3000 FPGA for Military and Aerospace Applications}{}{}{}{
   \cvline{Conference}{\url{http://www.klabs.org/mapld04/index.html}}
   \cvline{Paper}{\url{http://klabs.org/mapld04/papers/p/p108_roosta_p.doc}}
   \cvline{Presentation}{\url{http://klabs.org/mapld04/presentations/session_p/p108_roosta_s.ppt}}
 }
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{References}
 \cventry{}{Availabe upon request}{}{}{}{
 }
